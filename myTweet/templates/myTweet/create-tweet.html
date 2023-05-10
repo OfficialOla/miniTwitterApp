@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Tweet</title>
+</head>
+<body>
+    {% block content %}
+    <form action="" method="post">
+        {%  csrf_token %}
+        {{ form.as_p }}
+        <button type="Submit"> post</button>
+    </form>
+    {% endblock %}
+
+</body>
+</html>
